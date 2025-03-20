@@ -21,13 +21,22 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
 
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Formular.html">Hinzufügen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="kontaktanfragen.html">Kontaktanfragen</a>
+            <a class="nav-link active" aria-current="page" href="kontaktanfragen.html">Kundensupport</a>
           </li>
          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kategorien
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Gewichte</a></li>
+              <li><a class="dropdown-item" href="#">Accessoires</a></li>
+              <li><a class="dropdown-item" href="#">Cardio</a></li>
+
+            </ul>
+          </li>
 
         </ul>
         <form class="d-flex" role="search">
@@ -38,4 +47,45 @@
     </div>
   </nav>
 
-  <form> </form>
+  <div class="container text-center">
+    <div class="row">
+
+        <div class="col">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ url_for('static', filename='images/Kurzhantel80kg.jpg') }}" > 
+    <div class="card-body">
+
+      <p class="card-text">Kurzhantel</br> Gewicht: 80kg<br> 
+      Preis: 45€</p>
+      </p>
+    </div>
+  </div>
+        </div>
+
+
+        <div class="col">
+    <div class="card" style="width: 18rem;">
+    <img src="Kurzhantel20kg.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Kurzhantel</br>Gewicht: 20kg</br>
+        Preis: 15€</p>
+    </div>
+  </div>
+        </div>
+
+        <div class="col">
+  <div class="card" style="width: 18rem;">
+    <img src="biologie.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Langhantelstange</br> Gewicht: 20kg</br>
+        Preis: 45€ </p>
+    </div>
+  </div>
+
+        </div>
+  </div>
+
+</body>
+</html>
+
+  
