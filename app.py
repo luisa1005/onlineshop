@@ -12,21 +12,21 @@ def home():
 
 
 @app.route('/kontaktanfragen.html', methods=['GET', 'POST']) 
-def add_book():
+def Kundensupport():
  
     if request.method == 'POST':
  
-        title = request.form['title']
+        Name = request.form['Name']
  
-        price = request.form['price']
+        Email = request.form['Email']
  
-        condition = request.form['condition']
+        Betreff = request.form['Betreff']
  
-         
+        Nachricht = request.form['Nachricht']
  
         # Debug-Ausgabe
  
-        print(f"Titel: {title}, Preis: {price}, Zustand: {condition}")
+        print(f"Name: {Name}, Email: {Email}, Zustand: {Betreff}, Nachricht: {Nachricht}")
  
          
  
@@ -34,7 +34,7 @@ def add_book():
  
      
  
-    return render_template('kontakanfragen.html')
+    return render_template('kontaktanfragen.html')
  
  
  
